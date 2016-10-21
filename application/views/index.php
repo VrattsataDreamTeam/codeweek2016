@@ -1,62 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+<?php
 
-        <title>Mamma's Kitchen</title>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/pricing.css">
-        <link rel="stylesheet" href="css/main.css">
-
-
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $('.flexslider').flexslider({
-                 animation: "slide",
-                 controlsContainer: ".flexslider-container"
-                });
-            });
-        </script>
-
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map-canvas');
-                var mapOptions = {
-                    center: new google.maps.LatLng(24.909439, 91.833800),
-                    zoom: 16,
-                    scrollwheel: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions)
-
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(24.909439, 91.833800),
-                    title:"Mamma's Kitchen Restaurant"
-                });
-
-                // To add the marker to the map, call setMap();
-                marker.setMap(map);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-
-
-    </head>
-    <body data-spy="scroll" data-target="#template-navbar">
-
-        <!--== 4. Navigation ==-->
+include_once('includes/header.php');
+?>
+    <!--== 4. Navigation ==-->
         <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,7 +14,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img id="logo" src="images/Logo_main.png" class="logo img-responsive">
+                        <img id="logo" src="<?php echo base_url();?>images/Logo_main.png" class="logo img-responsive">
                     </a>
                 </div>
 
@@ -120,7 +66,7 @@
 
         <!--== 6. About us ==-->
         <section id="about" class="about">
-            <img src="images/icons/about_color.png" class="img-responsive section-icon hidden-sm hidden-xs">
+            <img src="<?php echo base_url();?>images/icons/about_color.png" class="img-responsive section-icon hidden-sm hidden-xs">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -175,7 +121,7 @@
                                 <li class="item dinner">
 
                                     <a href="#">
-                                        <img src="images/food1.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food1.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
                                                 <h3>Tomato Curry</h3>
@@ -190,7 +136,7 @@
                                 <li class="item breakfast">
 
                                     <a href="#">
-                                        <img src="images/food2.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food2.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Prawn Dish</h3>
@@ -204,7 +150,7 @@
                                 <li class="item desert">
 
                                     <a href="#">
-                                        <img src="images/food3.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food3.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Salad Dish</h3>
@@ -218,7 +164,7 @@
                                 <li class="item breakfast special">
 
                                     <a href="#">
-                                        <img src="images/food4.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food4.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Prawn Dish</h3>
@@ -232,7 +178,7 @@
                                 <li class="item breakfast">
 
                                     <a href="#">
-                                        <img src="images/food5.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food5.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Vegetable Dish</h3>
@@ -246,7 +192,7 @@
                                 <li class="item dinner special">
 
                                     <a href="#">
-                                        <img src="images/food6.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food6.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Chicken Dish</h3>
@@ -260,7 +206,7 @@
                                 <li class="item desert">
 
                                     <a href="#">
-                                        <img src="images/food7.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food7.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Vegetable Noodles</h3>
@@ -274,7 +220,7 @@
                                 <li class="item dinner">
 
                                     <a href="#">
-                                        <img src="images/food8.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food8.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Special Salad</h3>
@@ -288,7 +234,7 @@
                                 <li class="item desert special">
 
                                     <a href="#">
-                                        <img src="images/food9.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food9.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Ice-cream</h3>
@@ -315,7 +261,7 @@
 
         <!--== 8. Great Place to enjoy ==-->
         <section id="great-place-to-enjoy" class="great-place-to-enjoy">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/beer_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/beer_black.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -334,7 +280,7 @@
 
         <!--==  9. Our Beer  ==-->
         <section id="beer" class="beer">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/beer_color.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/beer_color.png">
             <div class="container-fluid">
                 <div class="row dis-table">
                     <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
@@ -362,7 +308,7 @@
 
         <!--== 10. Our Breakfast Menu ==-->
         <section id="breakfast" class="breakfast">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/bread_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/bread_black.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -381,7 +327,7 @@
 
         <!--== 11. Our Bread ==-->
         <section id="bread" class="bread">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/bread_color.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/bread_color.png">
             <div class="container-fluid">
                 <div class="row dis-table">
                     <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
@@ -411,7 +357,7 @@
 
         <!--== 12. Our Featured Dishes Menu ==-->
         <section id="featured-dish" class="featured-dish">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/food_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/food_black.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -686,7 +632,7 @@
         <!--== 14. Have a look to our dishes ==-->
 
         <section id="have-a-look" class="have-a-look hidden-xs">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/food_color.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/food_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -696,37 +642,37 @@
                                 <div class="flexslider">
                                     <ul class="slides">
                                         <li>
-                                            <img src="images/menu-gallery/menu1.png" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu1.png" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu2.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu2.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu3.png" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu3.png" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu4.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu4.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu5.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu5.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu6.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu6.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu7.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu7.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu8.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu8.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu9.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu9.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu10.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu10.jpg" />
                                         </li>
                                         <li>
-                                            <img src="images/menu-gallery/menu11.jpg" />
+                                            <img src="<?php echo base_url();?>images/menu-gallery/menu11.jpg" />
                                         </li>
                                     </ul>
                                 </div>
@@ -748,7 +694,7 @@
 
         <!--== 15. Reserve A Table! ==-->
         <section id="reserve" class="reserve">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/reserve_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_black.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -766,7 +712,7 @@
 
 
         <section class="reservation">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/reserve_color.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class=" section-content">
@@ -910,30 +856,7 @@
         </section>
 
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="copyright text-center">
-                            <p>
-                                &copy; Copyright, 2015 <a href="#">Your Website Link.</a> Theme by <a href="http://themewagon.com/"  target="_blank">ThemeWagon</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<?php
 
-    
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
-        <script src="js/script.js"></script>
-        
-
-    </body>
-</html>
+include_once('includes/footer.php');
+?>
