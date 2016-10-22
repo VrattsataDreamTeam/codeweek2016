@@ -39,8 +39,8 @@ include_once('includes/header.php');
             <div class="item">
                 <div class="container">
                     <div class="header-content">
-                        <h1 class="header-title">BEST FOOD</h1>
-                        <p class="header-sub-title">create your own slogan</p>
+                        <h1 class="header-title">Най - добрите Баници</h1>
+                        <p class="header-sub-title">Вита баница със сирене</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
