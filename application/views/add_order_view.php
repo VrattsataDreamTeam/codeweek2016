@@ -31,14 +31,14 @@ foreach ($meals as $meal) {
 echo form_dropdown('meals', $options_meals);
 
 echo"<p>Количество, бр</p>";//
-echo form_input('nums');
+echo form_input('order_num');
 
 echo"<p>Общо сума</p>";
 
 
 //$sum = $num*$meal_price;
 
-echo form_input('sum');
+echo form_input('oreder_sum');
 
 echo "<p>".form_submit('submit', 'Поръчай')."</p>";
 
