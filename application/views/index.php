@@ -75,13 +75,15 @@ include_once('includes/header.php');
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
                                 <h2 class="section-content-title">За Нас</h2>
+                               <p>Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
-                                    Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                                   Идеята на "Баба Кетъринг" е намирането на реално решение на проблема с ниските доходи на възрастните хора в обезлюдените села като ги свърже с бизнеса.
                                 </p>
                                 <p class="section-content-para">
-                                    beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                                   Целта е да се насърчат фирмите,организации и отделните хора да поръчват на бабите от селата готова храна, за своите фирмени събития и лични празненства срещу заплащане.
+                                   Така се дава възможност за допълнителен доход на възрастните хора, а вие ще се насладите на храна с неповторим вкус, приготвена с местни продукти!
                                 </p>
-                           <div id="big_screen">
+                           <div id="big_screen2">
                             <br>
                             <br>
                             <br>
@@ -94,7 +96,9 @@ include_once('includes/header.php');
                             <br>
                             <br>
                             <br>
+                              <br>
                            
+                         
                            </div>
                               
                             </div> <!-- /.section-content -->
@@ -114,12 +118,12 @@ include_once('includes/header.php');
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
                                     <div class="section-header">
-                                        <h2 class="pricing-title">Какво предлагаме</h2>
+                                        <h2 class="pricing-title">Какво предлагаме на най-ниски цени </h2>
                                         <ul id="filter-list" class="clearfix">
                                             <li class="filter" data-filter="all">Всички</li>
                                             <li class="filter" data-filter=".dough">Тестени</li>
                                             <li class="filter" data-filter=".meat">Местни</li>
-                                            <li class="filter" data-filter=".no-meat">Безместни</li>
+                                            <li class="filter" data-filter=".no-meat">Традиционни</li>
                                             <li class="filter" data-filter=".desert">Десерти</li>
                                         </ul><!-- @end #filter-list -->
                                     </div>
@@ -135,7 +139,7 @@ include_once('includes/header.php');
                             <ul id="menu-pricing" class="menu-price">
                                 <li class="item dough">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food1.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
@@ -150,7 +154,7 @@ include_once('includes/header.php');
 
                                 <li class="item dough">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food2.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -164,7 +168,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item dough">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food3.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -178,12 +182,12 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food4.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
                                                 <h3>Гювечът със свинско месо на баба</h3>
-                                                По речепта от едно време
+                                                По рецепта от едно време
                                             </span>
                                         </div>
                                     </a>
@@ -192,7 +196,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food5.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -206,12 +210,12 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food6.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
-                                                <h3>Сарми с кълцано месо в гювеч</h3>
-                                                Сарми с листа кисело зеле и парчета месо
+                                                <h3>Сърми с кълцано месо в гювеч</h3>
+                                                Сърми с листа кисело зеле и парчета месо
                                             </span>
                                         </div>
                                     </a>
@@ -220,7 +224,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item no-meat">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food7.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -234,7 +238,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item no-meat">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food8.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -248,7 +252,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item desert">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food9.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -262,7 +266,7 @@ include_once('includes/header.php');
                                 </li> 
                                 <li class="item desert">
 
-                                    <a href="#">
+                                    <a href="#the_form">
                                         <img src="<?php echo base_url();?>images/food10.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -318,13 +322,13 @@ include_once('includes/header.php');
 
                     <div class="col-xs-12 col-sm-6 dis-table-cell">
                         <div class="section-content">
-                            <h2 class="section-content-title">Our Beer</h2>
+                            <h2 class="section-content-title">Условия </h2>
                             <div class="section-description">
                                 <p class="section-content-para">
-                                    Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                                    Ние работим с много Баби от много села в България, все пак може да има известно забавяне на поръчка ако всичките ни Баби са заети с поръчки и готвят за някой.
                                 </p>
                                 <p class="section-content-para">
-                                    beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                                    Нашите условия са прости - подхождайте към сайта, работата ни, и най-вече бабите с разбиране и топло сърце, все пак знаете че всяка наша готвачка ще даде максимални усилия за да ви сготви както от едно време, за да оближете пръсти.Ако желаете да зарадвате и подпомогнете направете поръчката си чрез формата по-долу, Бон Апети !
                                 </p>
                             </div>
                         </div>
@@ -346,7 +350,7 @@ include_once('includes/header.php');
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Reserve A Table !</h2>
+                            <h2 class="section-title">Пазарувай !</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
                             
@@ -365,6 +369,7 @@ include_once('includes/header.php');
                     <div class=" section-content">
                         <div class="row">
                             <div class="col-md-5 col-sm-6">
+                                <div id="the_form">
                                 <form class="reservation-form" method="post" action="reserve.php">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
@@ -395,7 +400,7 @@ include_once('includes/header.php');
                                                 Make a reservation
                                             </button>
                                         </div>
-                                            
+                                          </div> <!-- end of the_form div  --> 
                                     </div>
                                 </form>
                             </div>

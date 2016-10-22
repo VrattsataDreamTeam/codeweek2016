@@ -406,9 +406,9 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 .about-bg
 {
-	background: url('../images/About-C-bg.jpg');
+	background: url('../images/Grandmother_about_green.png');
 	background-repeat: no-repeat;
-	background-size: 85%;
+	background-size: 95%;
   	background-position-x: 15%;
   	background-position-y: 80%;
 
@@ -706,7 +706,7 @@ footer a:hover
 }
 
 @media (min-width: 1500px) {
-	#big_screen{
+	#big_screen2{
      display:block;
 	}
 	.section-icon {
