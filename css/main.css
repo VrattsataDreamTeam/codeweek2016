@@ -682,6 +682,19 @@ footer a:hover
 #big_screen2{
 	display : none;
 }
+#bg_old{
+background-image: url('../images/bg_paper.png');
+background-position: center;
+
+ background-size: 108% 98%;
+
+}#bg_old2{
+background-image: url('../images/bg_paper2.png');
+background-position: center;
+
+ background-size: 112% 110%;
+
+}
 /*=================================================
 ||				18. Media Query
 ==================================================*/

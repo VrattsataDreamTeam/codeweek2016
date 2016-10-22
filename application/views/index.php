@@ -72,8 +72,11 @@ include_once('includes/header.php');
                         <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
 
                         </div>
+                        
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
+                             <div id="bg_old">
                             <div class="section-content">
+                               
                                 <h2 class="section-content-title">За Нас</h2>
                                <p class="section-content-para">Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
@@ -93,13 +96,15 @@ include_once('includes/header.php');
                             <br>
                             <br>
                             <br>
-                           </div>
+                           </div> <!-- end of space div -->
+                      
                               
                             </div> <!-- /.section-content -->
                         </div>
                     </div> <!-- /.row -->
                 </div> <!-- /.container-fluid -->
             </div> <!-- /.wrapper -->
+             </div> <!-- end of bg_old -->
         </section> <!-- /#about -->
 
 
@@ -290,6 +295,7 @@ include_once('includes/header.php');
         <section id="great-place-to-enjoy" class="great-place-to-enjoy">
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/order_modified.png">
             <div class="wrapper">
+
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
@@ -307,14 +313,15 @@ include_once('includes/header.php');
 
         <!--==  9. Our Beer  ==-->
         <section id="beer" class="beer">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/beer_color.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/conditions.png">
             <div class="container-fluid">
                 <div class="row dis-table">
                     <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
 
                     </div>
-
+                     
                     <div class="col-xs-12 col-sm-6 dis-table-cell">
+                        <div id="bg_old2">
                         <div class="section-content">
                             <h2 class="section-content-title">Условия </h2>
                             <div class="section-description">
@@ -328,6 +335,7 @@ include_once('includes/header.php');
                             </div>
                         </div>
                     </div>
+                </div> <!-- end of bg div -->
                 </div>
             </div>
         </section>
@@ -345,7 +353,7 @@ include_once('includes/header.php');
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Пазарувай сега  !</h2>
+                            <h2 class="section-title">Пазарувай сега  ! </h2> 
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
                             
