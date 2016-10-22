@@ -72,11 +72,12 @@ include_once('includes/header.php');
                         <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
 
                         </div>
-                        
+                         <div id="bg_old">
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
-                             <div id="bg_old">
-                            <div class="section-content">
+                            
                                
+                            <div class="section-content">
+                                <div id="text_bg">
                                 <h2 class="section-content-title">За Нас</h2>
                                <p class="section-content-para">Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
@@ -103,6 +104,7 @@ include_once('includes/header.php');
                         </div>
                     </div> <!-- /.row -->
                 </div> <!-- /.container-fluid -->
+            </div> <!-- end of text bg -->
             </div> <!-- /.wrapper -->
              </div> <!-- end of bg_old -->
         </section> <!-- /#about -->
@@ -323,6 +325,7 @@ include_once('includes/header.php');
                     <div class="col-xs-12 col-sm-6 dis-table-cell">
                         <div id="bg_old2">
                         <div class="section-content">
+                            <div id="condition_text">
                             <h2 class="section-content-title">Условия </h2>
                             <div class="section-description">
                                 <p class="section-content-para">
@@ -335,6 +338,7 @@ include_once('includes/header.php');
                             </div>
                         </div>
                     </div>
+                </div> <!-- end of condition_text -->
                 </div> <!-- end of bg div -->
                 </div>
             </div>
