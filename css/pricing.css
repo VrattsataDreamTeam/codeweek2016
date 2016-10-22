@@ -8,8 +8,8 @@
   margin: 0 auto;
 }*/
 
-.pricing-filter {
-	background: url(../images/pricing_bg.jpg);
+.pricing-filter, #menu-pricing {
+	background: url(../images/pricing_bg.png);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
