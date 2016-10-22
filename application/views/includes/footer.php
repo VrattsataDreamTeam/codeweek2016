@@ -4,7 +4,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <div class="copyright text-center">
                             <p>
-                                &copy; Copyright, 2015 <a href="#">Your Website Link.</a> Theme by <a href="http://themewagon.com/"  target="_blank">ThemeWagon</a>
+                                &copy; Copyright, 2016 Vrattsata Dream Team <p> Theme by <a href="http://themewagon.com/"  target="_blank">ThemeWagon</a></p>
                             </p>
                         </div>
                     </div>
