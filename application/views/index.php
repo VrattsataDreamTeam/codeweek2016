@@ -38,7 +38,7 @@ include_once('includes/header.php');
             <div class="item">
                 <div class="container">
                     <div class="header-content">
-                        <h1 class="header-title">Най - добрите Баници</h1>
+                        <h1 class="header-title">Най - вкусните Баници</h1>
                         <p class="header-sub-title">Вита баница със сирене</p>
                     </div> <!-- /.header-content -->
                 </div>
@@ -46,16 +46,16 @@ include_once('includes/header.php');
             <div class="item">
                 <div class="container">
                     <div class="header-content">
-                        <h1 class="header-title">BEST SNACKS</h1>
-                        <p class="header-sub-title">create your own slogan</p>
+                        <h1 class="header-title">Най - меката питка</h1>
+                        <p class="header-sub-title">На баба питката</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
             <div class="item">
                 <div class="container">
                     <div class="header-content text-right pull-right">
-                        <h1 class="header-title">BEST DRINKS</h1>
-                        <p class="header-sub-title">create your own slogan</p>
+                        <h1 class="header-title3">Най - ароматния боб</h1>
+                        <p class="header-sub-title3">Боб с наденица</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>

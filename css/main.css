@@ -310,20 +310,39 @@ nav.shrink .navbar-toggle {
 }
 .header-title, .header-sub-title
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lobster', sans-serif;
 	text-transform: uppercase;
-	color: #333;
+	color: #fff;
 }
 .header-title
 {
-	font-size: 112px;
-	font-weight: 100;
+	font-size: 100px;
+	font-weight: 120;
 	margin-bottom: 0px;
 	line-height: 1;
 }
 .header-sub-title
 {
-	font-size: 16px;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.header-title3, .header-sub-title3
+{
+	
+	font-family: 'Lobster', sans-serif;;
+	text-transform: uppercase;
+	color: #4286f4;
+}
+.header-title3
+{
+	font-size: 100px;
+	font-weight: 120;
+	margin-bottom: 0px;
+	line-height: 1;
+}
+.header-sub-title3
+{
+	font-size: 20px;
 	margin-left: 10px;
 }
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item .item
