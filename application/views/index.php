@@ -75,11 +75,13 @@ include_once('includes/header.php');
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
                                 <h2 class="section-content-title">За Нас</h2>
+                                <p>Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
-                                    Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                                   Идеята на "Баба Кетъринг" е намирането на реално решение на проблема с ниските доходи на възрастните хора в обезплодените села като ги свърже с бизнеса.
                                 </p>
                                 <p class="section-content-para">
-                                    beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                                   Целта е да се насърчат фирмите,организации и отделните хора да поръчват на бабите от селата готова храна, за своите фирмени събития и лични празненства срещъ заплащане.
+                                   Така се дава възможност за допълнителен доход на възрастните хора, а вие ще се насладите на храна с неповторим вкус, приготвена с местни продукти!
                                 </p>
                             </div> <!-- /.section-content -->
                         </div>
