@@ -8,7 +8,7 @@
         <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
 
         <title>Баба Кетъринг</title>
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Marck+Script" rel="stylesheet"> 
         <link rel="stylesheet" href="<?php echo base_url();?>css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url();?>css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url();?>css/owl.carousel.css">

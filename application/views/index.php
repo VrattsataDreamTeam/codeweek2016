@@ -75,7 +75,7 @@ include_once('includes/header.php');
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
                                 <h2 class="section-content-title">За Нас</h2>
-                               <p>Какво е Баба Кетъринг ?</p>
+                               <p class="section-content-para">Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
                                    Идеята на "Баба Кетъринг" е намирането на реално решение на проблема с ниските доходи на възрастните хора в обезлюдените села като ги свърже с бизнеса.
                                 </p>
@@ -83,7 +83,7 @@ include_once('includes/header.php');
                                    Целта е да се насърчат фирмите,организации и отделните хора да поръчват на бабите от селата готова храна, за своите фирмени събития и лични празненства срещу заплащане.
                                    Така се дава възможност за допълнителен доход на възрастните хора, а вие ще се насладите на храна с неповторим вкус, приготвена с местни продукти!
                                 </p>
-                           <div id="big_screen2">
+                           <div id="big_screen2">  <!-- div space for big screens -->
                             <br>
                             <br>
                             <br>
@@ -93,12 +93,6 @@ include_once('includes/header.php');
                             <br>
                             <br>
                             <br>
-                            <br>
-                            <br>
-                            <br>
-                              <br>
-                           
-                         
                            </div>
                               
                             </div> <!-- /.section-content -->
@@ -328,7 +322,8 @@ include_once('includes/header.php');
                                     Ние работим с много Баби от много села в България, все пак може да има известно забавяне на поръчка ако всичките ни Баби са заети с поръчки и готвят за някой.
                                 </p>
                                 <p class="section-content-para">
-                                    Нашите условия са прости - подхождайте към сайта, работата ни, и най-вече бабите с разбиране и топло сърце, все пак знаете че всяка наша готвачка ще даде максимални усилия за да ви сготви както от едно време, за да оближете пръсти.Ако желаете да зарадвате и подпомогнете направете поръчката си чрез формата по-долу, Бон Апети !
+                                    Нашите условия са прости - подхождайте към сайта, работата ни, и най-вече бабите с разбиране и топло сърце, все пак знаете че всяка наша готвачка ще даде максимални усилия за да ви сготви както от едно време, за да оближете пръсти.Ако желаете да зарадвате и подпомогнете направете поръчката си чрез формата по-долу.
+                                    <p class="section-content-para"> Бон Апети !</p>
                                 </p>
                             </div>
                         </div>
@@ -343,14 +338,14 @@ include_once('includes/header.php');
 
 
 
-        <!--== 15. Reserve A Table! ==-->
+       <!--== 15. Reserve A Table! ==-->
         <section id="reserve" class="reserve">
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/form_order.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Пазарувай !</h2>
+                            <h2 class="section-title">Пазарувай сега  !</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
                             
@@ -369,7 +364,6 @@ include_once('includes/header.php');
                     <div class=" section-content">
                         <div class="row">
                             <div class="col-md-5 col-sm-6">
-                                <div id="the_form">
                                 <form class="reservation-form" method="post" action="reserve.php">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
@@ -400,7 +394,7 @@ include_once('includes/header.php');
                                                 Make a reservation
                                             </button>
                                         </div>
-                                          </div> <!-- end of the_form div  --> 
+                                            
                                     </div>
                                 </form>
                             </div>
@@ -431,9 +425,6 @@ include_once('includes/header.php');
                 </div>
             </div>
         </section>
-
-
-
 
 
 
