@@ -308,11 +308,14 @@ nav.shrink .navbar-toggle {
 	margin-top: 30vh;
 	display: inline-block;
 }
-.header-title, .header-sub-title
+.header-title, .header-sub-title, .header-sub-title3
 {
 	font-family: 'Lobster', sans-serif;
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+	font-weight: 120;
 }
 .header-title
 {
@@ -320,18 +323,21 @@ nav.shrink .navbar-toggle {
 	font-weight: 120;
 	margin-bottom: 0px;
 	line-height: 1;
+	color:rgb(139, 195, 74);
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.header-sub-title
+.header-sub-title,  
 {
 	font-size: 20px;
 	margin-left: 10px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.header-title3, .header-sub-title3
+.header-sub-title, .header-sub-title3
 {
 	
-	font-family: 'Lobster', sans-serif;;
+	font-family: sans-serif;
 	text-transform: uppercase;
-	color: #4286f4;
+	color:#fff;
 }
 .header-title3
 {

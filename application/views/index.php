@@ -54,8 +54,8 @@ include_once('includes/header.php');
             <div class="item">
                 <div class="container">
                     <div class="header-content text-right pull-right">
-                        <h1 class="header-title3">Най - ароматния боб</h1>
-                        <p class="header-sub-title3">Боб с наденица</p>
+                        <h1 class="header-title">Най - ароматния боб</h1>
+                        <p class="header-sub-title">Боб с наденица</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
