@@ -75,13 +75,11 @@ include_once('includes/header.php');
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
                                 <h2 class="section-content-title">За Нас</h2>
-                                <p>Какво е Баба Кетъринг ?</p>
                                 <p class="section-content-para">
-                                   Идеята на "Баба Кетъринг" е намирането на реално решение на проблема с ниските доходи на възрастните хора в обезлюдените села като ги свърже с бизнеса.
+                                    Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
                                 </p>
                                 <p class="section-content-para">
-                                   Целта е да се насърчат фирмите,организации и отделните хора да поръчват на бабите от селата готова храна, за своите фирмени събития и лични празненства срещу заплащане.
-                                   Така се дава възможност за допълнителен доход на възрастните хора, а вие ще се насладите на храна с неповторим вкус, приготвена с местни продукти!
+                                    beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
                                 </p>
                             </div> <!-- /.section-content -->
                         </div>
@@ -100,13 +98,13 @@ include_once('includes/header.php');
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
                                     <div class="section-header">
-                                        <h2 class="pricing-title">Достъпни Цени</h2>
+                                        <h2 class="pricing-title">Какво предлагаме</h2>
                                         <ul id="filter-list" class="clearfix">
-                                            <li class="filter" data-filter="all">All</li>
-                                            <li class="filter" data-filter=".breakfast">Breakfast</li>
-                                            <li class="filter" data-filter=".special">Special</li>
-                                            <li class="filter" data-filter=".desert">Desert</li>
-                                            <li class="filter" data-filter=".dinner">Dinner</li>
+                                            <li class="filter" data-filter="all">Всички</li>
+                                            <li class="filter" data-filter=".dough">Тестени</li>
+                                            <li class="filter" data-filter=".meat">Местни</li>
+                                            <li class="filter" data-filter=".no-meat">Безместни</li>
+                                            <li class="filter" data-filter=".desert">Десерти</li>
                                         </ul><!-- @end #filter-list -->
                                     </div>
                                 </div>
@@ -119,10 +117,10 @@ include_once('includes/header.php');
                     <div class="row">  
                         <div class="col-md-10 col-md-offset-1">
                             <ul id="menu-pricing" class="menu-price">
-                                <li class="item dinner">
+                                <li class="item dough">
 
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>images/food1.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food1.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
                                                 <h3>Вита Баница със Сирене</h3>
@@ -134,118 +132,132 @@ include_once('includes/header.php');
                                     <h2 class="white">20 лв.</h2>
                                 </li>
 
-                                <li class="item breakfast">
+                                <li class="item dough">
 
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>images/food2.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food2.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
-                                                <h3>Prawn Dish</h3>
-                                                Lorem ipsum dolor sit amet
+                                                <h3>Мекици</h3>
+                                                Както баба ви ги е правила, когато сте били малки
                                             </span>
                                         </div>
                                     </a>
                                         
-                                    <h2 class="white">$20</h2>
+                                    <h2 class="white">10 лв.</h2>
+                                </li>
+                                <li class="item dough">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food3.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Питка</h3>
+                                                Ръчно приготвена питка, печена на печка с дърва
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">15 лв.</h2>
+                                </li>
+                                <li class="item meat">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food4.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Гювечът със свинско месо на баба</h3>
+                                                По речепта от едно време
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">35 лв.</h2>
+                                </li>
+                                <li class="item meat">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food5.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Телешко с грах</h3>
+                                                Яхния с телешко месо, грах и моркови
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">25 лв.</h2>
+                                </li>
+                                <li class="item meat">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food6.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Сарми с кълцано месо в гювеч</h3>
+                                                Сарми с листа кисело зеле и парчета месо
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">23 лв.</h2>
+                                </li>
+                                <li class="item no-meat">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food7.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Чушки с боб</h3>
+                                                Пълнени сухи чушки с боб 
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">15 лв.</h2>
+                                </li>
+                                <li class="item no-meat">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food8.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Постна манджа с тиквички и чесън</h3>
+                                                Диетично ястие с тиквички, ориз и пресен лук
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white">19 лв.</h2>
                                 </li>
                                 <li class="item desert">
 
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>images/food3.jpg" class="img-responsive" alt="Food" >
+                                        <img src="<?php echo base_url();?>images/food9.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
-                                                <h3>Salad Dish</h3>
-                                                Consectetur adipisicing elit, sed do eiusmod
-                                            </span>
-                                        </div>
-                                    </a>
-                                        
-                                    <h2 class="white">$18</h2>
-                                </li>
-                                <li class="item breakfast special">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food4.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Prawn Dish</h3>
-                                                Tempor incididunt ut labore et dolore
-                                            </span>
-                                        </div>
-                                    </a>
-                                        
-                                    <h2 class="white">$15</h2>
-                                </li>
-                                <li class="item breakfast">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food5.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Vegetable Dish</h3>
-                                                Magna aliqua. Ut enim ad minim veniam
-                                            </span>
-                                        </div>
-                                    </a>
-                                        
-                                    <h2 class="white">$20</h2>
-                                </li>
-                                <li class="item dinner special">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food6.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Chicken Dish</h3>
-                                                Quis nostrud exercitation ullamco laboris
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <h2 class="white">$22</h2>
-                                </li>
-                                <li class="item desert">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food7.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Vegetable Noodles</h3>
-                                                Nisi ut aliquip ex ea commodo
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <h2 class="white">$32</h2>
-                                </li>
-                                <li class="item dinner">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food8.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Special Salad</h3>
-                                                Duis aute irure dolor in reprehenderit
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <h2 class="white">$38</h2>
-                                </li>
-                                <li class="item desert special">
-
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>images/food9.jpg" class="img-responsive" alt="Food" >
-                                        <div class="menu-desc">
-                                            <span>
-                                                <h3>Ice-cream</h3>
-                                                Excepteur sint occaecat cupidatat non
+                                                <h3>Млечница</h3>
+                                                Мляко с ориз
                                             </span>
                                         </div>
                                     </a>
                                     
-                                    <h2 class="white">$38</h2>
-                                </li>  
+                                    <h2 class="white">8 лв.</h2>
+                                </li> 
+                                <li class="item desert">
+
+                                    <a href="#">
+                                        <img src="<?php echo base_url();?>images/food10.png" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Тиква</h3>
+                                                С мед и орехи - м-м-м-м-м!
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white">12 лв.</h2>
+                                </li> 
                             </ul>
 
                             <!-- <div class="text-center">
