@@ -705,10 +705,11 @@ background-color: rgba(139, 195, 74, 0.74);
 }
 #bg_old2{
 background-image: url('../images/bg_paper2.png');
-background-position: center;
+background-repeat: no-repeat;
+background-position: 85% 20%;
+background-attachment: fixed;
 
- background-size: 112% 110%;
- 
+
 
 }
 /*=================================================
