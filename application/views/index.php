@@ -14,7 +14,7 @@ include_once('includes/header.php');
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img id="logo" src="<?php echo base_url();?>images/logo_new.png" class="logo img-responsive">
+                        <img id="logo" src="<?php echo base_url();?>images/logo_new1.png" class="logo img-responsive">
                     </a>
                 </div>
 
