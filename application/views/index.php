@@ -123,13 +123,13 @@ include_once('includes/header.php');
                                         <img src="<?php echo base_url();?>images/food1.jpg" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
-                                                <h3>Tomato Curry</h3>
-                                                Natalie &amp; Justin Cleaning by Justin Younger
+                                                <h3>Вита Баница със Сирене</h3>
+                                                Нашите баби, с удолвоствие ще ви приготвят домашна баница 
                                             </span>
                                         </div>
                                     </a>
                                         
-                                    <h2 class="white">$20</h2>
+                                    <h2 class="white">20 лв.</h2>
                                 </li>
 
                                 <li class="item breakfast">
