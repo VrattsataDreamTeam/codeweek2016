@@ -21,7 +21,7 @@ include_once('includes/header.php');
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="Food-fair-toggle">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">about</a></li>
+                        <li><a href="#about">За Нас</a></li>
                         <li><a href="#pricing">pricing</a></li>
                         <li><a href="#great-place-to-enjoy">beer</a></li>
                         <li><a href="#breakfast">bread</a></li>
@@ -75,7 +75,7 @@ include_once('includes/header.php');
                         </div>
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
-                                <h2 class="section-content-title">About us</h2>
+                                <h2 class="section-content-title">За Нас</h2>
                                 <p class="section-content-para">
                                     Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
                                 </p>
