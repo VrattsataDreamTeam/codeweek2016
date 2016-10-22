@@ -100,7 +100,7 @@ include_once('includes/header.php');
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
                                     <div class="section-header">
-                                        <h2 class="pricing-title">Affordable Pricing</h2>
+                                        <h2 class="pricing-title">Достъпни Цени</h2>
                                         <ul id="filter-list" class="clearfix">
                                             <li class="filter" data-filter="all">All</li>
                                             <li class="filter" data-filter=".breakfast">Breakfast</li>
