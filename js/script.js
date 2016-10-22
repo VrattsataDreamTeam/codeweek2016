@@ -71,8 +71,8 @@ $(document).ready(function() {
 $(document).ready(function(){
     $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
-            var src = "http://localhost/codeweek2016/codeweek2016/images/Logo_stick.png";
-             var src_big = "http://localhost/codeweek2016/codeweek2016/images/Logo_main.png";
+            var src = "http://localhost/codeweek2016/images/logo_new.png";
+             var src_big = "http://localhost/codeweek2016/images/logo_new.png";
             
             $("#logo").attr("src", src)
         }
