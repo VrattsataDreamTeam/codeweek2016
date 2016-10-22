@@ -411,6 +411,7 @@ nav.shrink .navbar-toggle {
 	background-size: 85%;
   	background-position-x: 15%;
   	background-position-y: 80%;
+
 }
 #about 
 {
@@ -676,6 +677,9 @@ footer a:hover
 	color: #00710A;
 	text-decoration: none;
 }
+#big_screen{
+	display : none;
+}
 /*=================================================
 ||				18. Media Query
 ==================================================*/
@@ -702,6 +706,9 @@ footer a:hover
 }
 
 @media (min-width: 1500px) {
+	#big_screen{
+     display:block;
+	}
 	.section-icon {
 		left: 48%;
 		margin-left: -25px;

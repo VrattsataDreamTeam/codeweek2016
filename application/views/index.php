@@ -65,7 +65,7 @@ include_once('includes/header.php');
 
         <!--== 6. About us ==-->
         <section id="about" class="about">
-            <img src="<?php echo base_url();?>images/icons/about_color.png" class="img-responsive section-icon hidden-sm hidden-xs">
+            <img src="<?php echo base_url();?>images/icons/about_modified.png" class="img-responsive section-icon hidden-sm hidden-xs">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
@@ -81,6 +81,22 @@ include_once('includes/header.php');
                                 <p class="section-content-para">
                                     beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
                                 </p>
+                           <div id="big_screen">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                           
+                           </div>
+                              
                             </div> <!-- /.section-content -->
                         </div>
                     </div> <!-- /.row -->
@@ -274,12 +290,12 @@ include_once('includes/header.php');
 
         <!--== 8. Great Place to enjoy ==-->
         <section id="great-place-to-enjoy" class="great-place-to-enjoy">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/beer_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/order_modified.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Great Place to enjoy</h2>
+                            <h2 class="section-title">Условията за поръчка от бабите</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
                             
@@ -325,7 +341,7 @@ include_once('includes/header.php');
 
         <!--== 15. Reserve A Table! ==-->
         <section id="reserve" class="reserve">
-            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_black.png">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/form_order.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class="row dis-table">
