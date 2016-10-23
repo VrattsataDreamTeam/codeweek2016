@@ -128,3 +128,14 @@ $('.iconified').on('keyup', function() {
 $(function() {  
     jQuery.scrollSpeed(100, 1000);
 });
+
+
+$(function() {  
+    jQuery('#menu-pricing a').on('click', function(ev){
+     
+     var selected_id = jQuery(this).data('id');
+   
+     $("#dropdown").val(selected_id);
+
+    }) 
+});
