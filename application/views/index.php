@@ -123,8 +123,8 @@ include_once('includes/header.php');
                                         <ul id="filter-list" class="clearfix">
                                             <li class="filter" data-filter="all">Всички</li>
                                             <li class="filter" data-filter=".dough">Тестени</li>
-                                            <li class="filter" data-filter=".meat">Месни</li>
-                                            <li class="filter" data-filter=".no-meat">Безмесни</li>
+                                            <li class="filter" data-filter=".meat">Местни</li>
+                                            <li class="filter" data-filter=".no-meat">Традиционни</li>
                                             <li class="filter" data-filter=".desert">Десерти</li>
                                         </ul><!-- @end #filter-list -->
                                     </div>
@@ -368,76 +368,144 @@ include_once('includes/header.php');
         </section> <!-- /#reserve -->
 
 
-<div id="the_form">
-        <section class="reservation">
+
+        <section  class="reservation" >
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class=" section-content">
                         <div class="row">
                             <div class="col-md-5 col-sm-6">
-                                <form class="reservation-form" method="post" action="reserve.php">
+
+                                <?php if (!isset($_POST['submit'])){
+         
+                                ?>
+                                <form class="reservation-form" method="post" action="Test/save_meals#reservation">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control reserve-form empty iconified" name="name" id="name" required="required" placeholder="  &#xf007;  Name">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="order_name" id="order_id" required="required" placeholder="  &#xf007;  Име">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" name="email" class="form-control reserve-form empty iconified" id="email" required="required" placeholder="  &#xf1d8;  e-mail">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="order_num"  required="required" placeholder="  &#xf095;  Количество">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <input type="tel" class="form-control reserve-form empty iconified" name="phone" id="phone" required="required" placeholder="  &#xf095;  Phone">
-                                            </div>
-                                            <div class="form-group">
+                                                
+                                                <input type="text" name="order_phone" class="form-control reserve-form empty iconified"  required="required" placeholder="  &#xf1d8;  Телефонен номер">
+                                            </div> 
+
+                                            <!-- <div class="form-group">
                                                 <input type="text" class="form-control reserve-form empty iconified" name="datepicker" id="datepicker" required="required" placeholder="&#xf017;  Time">
-                                            </div>
+                                            </div> -->
                                         </div>
 
-                                        <div class="col-md-12 col-sm-12">
-                                            <textarea type="text" name="message" class="form-control reserve-form empty iconified" id="message" rows="3" required="required" placeholder="  &#xf086;  We're listening"></textarea>
+                                        <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <?php
+                                            $options_meals = array();
+
+                                                foreach ($meals as $meal) {
+                                                    $options_meals[$meal['meal_id']] = $meal['meal_name'].' - '.$meal['meal_price']. 'лв';
+                                                }
+
+                                                echo form_dropdown('meal_id', $options_meals, '', 'class="form-control reserve-form empty iconified"');
+                                            ?>
+                                        </div>
+                                           
                                         </div>
 
                                         <div class="col-md-12 col-sm-12">
                                             <button type="submit" id="submit" name="submit" class="btn btn-reservation">
                                                 <span><i class="fa fa-check-circle-o"></i></span>
-                                                Make a reservation
+                                                Направи поръчка
                                             </button>
                                         </div>
+                                         
                                             
                                     </div>
                                 </form>
+
                             </div>
 
                             <div class="col-md-2 hidden-sm hidden-xs"></div>
 
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="opening-time">
-                                    <h3 class="opening-time-title">Hours</h3>
-                                    <p>Mon to Fri: 7:30 AM - 11:30 AM</p>
-                                    <p>Sat & Sun: 8:00 AM - 9:00 AM</p>
+
+                                    <h4>ЗА ГОЛЕМИ ПОРЪЧКИ</h4>
+                                    <p>Срок за поръка:</p>
+                                    <p>10 дни предварително!</p>
 
                                     <div class="launch">
-                                        <h4>Lunch</h4>
-                                        <p>Mon to Fri: 12:00 PM - 5:00 PM</p>
+                                        <h4>ЗА МАЛКИ ПОРЪЧКИ</h4>
+                                        <p>Срок за поръка:</p>
+                                    <p>3 дни предварително!</p>
+
                                     </div>
 
-                                    <div class="dinner">
-                                        <h4>Dinner</h4>
-                                        <p>Mon to Sat: 6:00 PM - 1:00 AM</p>
-                                        <p>Sun: 5:30 PM - 12:00 AM</p>
-                                    </div>
                                 </div>
                             </div>
+                            <?php } else {
+                                           // echo "<pre>";
+                                            //var_dump($lasts);
+                                            //echo "</pre>";
+                                echo '<div>';
+                                            foreach($lasts as $key => $value){
+                                                echo "<span style='font-size: 20px'>".$value['order_name'].", вашата поръчка е:"."</span>";
+                                            }
+                                            $sum = 0;
+                                            echo "<table border=3 class='table'>";
+                                            echo "<tr class='bg-success'>";
+                                                echo "<td>ЯСТИЕ</td>";    
+                                                echo "<td>ОПИСАНИЕ</td>";
+                                                echo "<td>ЦЕНА, ЛВ</td>";
+                                                echo "<td>БРОЙ</td>";
+                                                echo "<td>ОБЩА СУМА, ЛВ</td>";
+                                            echo "</tr>";
+                                                foreach($lasts as $key => $value){
+                                            echo "<tr>";                                               
+                                                echo "<td>";
+                                                echo $value['meal_name'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo $value['meal_description'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo $value['meal_price'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo $value['order_num'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                $sum = $value['meal_price']*$value['order_num'];
+                                                echo $sum;
+                                                echo "</td>";
+                                            echo "</tr>";
+                                            }
+                                        echo "</table>";
+                                        ?>
+                                        <div class="col-md-12 col-sm-12">
+                                            <a href="http://localhost/codeweek2016/index.php/Test#reserve"> <button type="submit" id="submit" name="submit" class="btn btn-reservation">
+                                                <span><i class="fa fa-check-circle-o"></i></span>
+                                                Направи поръчка
+                                            </button></a>
+                                        </div>
+                                        <?php
+
+                                         }
+                                          echo '<div>';
+                                          ?>
+
                         </div>
 
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+
 
 
 
