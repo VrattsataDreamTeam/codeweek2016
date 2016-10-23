@@ -706,7 +706,7 @@ background-color: rgba(139, 195, 74, 0.74);
 #bg_old2{
 background-image: url('../images/bg_paper2.png');
 background-repeat: no-repeat;
-background-position: 85% 20%;
+
 background-attachment: fixed;
 
 
@@ -736,8 +736,15 @@ background-attachment: fixed;
 		margin-top: 94px;
 	}
 }
+#bg_old2{
+background-position: 100% 20%;
+
+	}
 
 @media (min-width: 1500px) {
+	#bg_old2{
+		background-position: 77% 20%;
+	}
 	#big_screen2{
      display:block;
 	}
