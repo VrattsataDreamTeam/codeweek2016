@@ -140,7 +140,7 @@ include_once('includes/header.php');
                             <ul id="menu-pricing" class="menu-price">
                                 <li class="item dough">
 
-                                    <a href="#the_form">
+                                    <a data-id='4' href="#the_form">
                                         <img src="<?php echo base_url();?>images/food1.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
@@ -369,7 +369,7 @@ include_once('includes/header.php');
 
 
 
-        <section  class="reservation" >
+        <section  id="the_form" class="reservation" >
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
@@ -380,7 +380,7 @@ include_once('includes/header.php');
                                 <?php if (!isset($_POST['submit'])){
          
                                 ?>
-                                <form class="reservation-form" method="post" action="Test/save_meals#reservation">
+                                <form class="reservation-form" method="post" action="Test/save_meals#the_form">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
@@ -411,7 +411,7 @@ include_once('includes/header.php');
                                                     $options_meals[$meal['meal_id']] = $meal['meal_name'].' - '.$meal['meal_price']. 'лв';
                                                 }
 
-                                                echo form_dropdown('meal_id', $options_meals, '', 'class="form-control reserve-form empty iconified"');
+                                                echo form_dropdown('meal_id', $options_meals, '', 'id="dropdown" class="form-control reserve-form empty iconified"');
                                             ?>
                                         </div>
                                            
