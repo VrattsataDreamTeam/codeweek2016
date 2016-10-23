@@ -134,13 +134,13 @@ include_once('includes/header.php');
                     </div>
                 </div>
 
-                <div class="container">
+                <div id="now" class="container">
                     <div class="row">  
                         <div class="col-md-10 col-md-offset-1">
                             <ul id="menu-pricing" class="menu-price">
                                 <li class="item dough">
 
-                                    <a data-id='4' href="#the_form">
+                                    <a data-id='1' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food1.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc text-center">
                                             <span>
@@ -155,7 +155,7 @@ include_once('includes/header.php');
 
                                 <li class="item dough">
 
-                                    <a href="#the_form">
+                                    <a data-id='5' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food2.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -169,7 +169,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item dough">
 
-                                    <a href="#the_form">
+                                    <a data-id='2' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food3.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -183,7 +183,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#the_form">
+                                    <a data-id='6' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food4.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -197,7 +197,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#the_form">
+                                    <a data-id='7' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food5.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -211,7 +211,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item meat">
 
-                                    <a href="#the_form">
+                                    <a data-id='8' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food6.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -225,7 +225,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item no-meat">
 
-                                    <a href="#the_form">
+                                    <a data-id='9' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food7.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -239,7 +239,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item no-meat">
 
-                                    <a href="#the_form">
+                                    <a data-id='10' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food8.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -253,7 +253,7 @@ include_once('includes/header.php');
                                 </li>
                                 <li class="item desert">
 
-                                    <a href="#the_form">
+                                    <a data-id='11' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food9.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -267,7 +267,7 @@ include_once('includes/header.php');
                                 </li> 
                                 <li class="item desert">
 
-                                    <a href="#the_form">
+                                    <a data-id='12' href="#the_form2">
                                         <img src="<?php echo base_url();?>images/food10.png" class="img-responsive" alt="Food" >
                                         <div class="menu-desc">
                                             <span>
@@ -368,19 +368,20 @@ include_once('includes/header.php');
         </section> <!-- /#reserve -->
 
 
-
-        <section  id="the_form" class="reservation" >
+  <div id="the_form2">
+        <section  class="reservation" >
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
                     <div class=" section-content">
                         <div class="row">
                             <div class="col-md-5 col-sm-6">
+                              
 
                                 <?php if (!isset($_POST['submit'])){
          
                                 ?>
-                                <form class="reservation-form" method="post" action="Test/save_meals#the_form">
+                                <form class="reservation-form" method="post" action="<?php echo base_url();?>index.php/test/save_meals#footer">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
@@ -423,7 +424,7 @@ include_once('includes/header.php');
                                                 Направи поръчка
                                             </button>
                                         </div>
-                                         
+                                       
                                             
                                     </div>
                                 </form>
@@ -452,6 +453,17 @@ include_once('includes/header.php');
                                            // echo "<pre>";
                                             //var_dump($lasts);
                                             //echo "</pre>";
+                                echo "<script>
+                                 
+
+var delay=900; //1 second
+
+setTimeout(function() {
+  $('html, body').animate({
+        scrollTop: $('#the_form2').offset().top+1000}, 0);
+}, delay);
+                                </script>";
+                                echo '<div id="the_form2">';
                                 echo '<div>';
                                             foreach($lasts as $key => $value){
                                                 echo "<span style='font-size: 20px'>".$value['order_name'].", вашата поръчка е:"."</span>";
@@ -488,15 +500,16 @@ include_once('includes/header.php');
                                         echo "</table>";
                                         ?>
                                         <div class="col-md-12 col-sm-12">
-                                            <a href="http://localhost/codeweek2016/index.php/Test#reserve"> <button type="submit" id="submit" name="submit" class="btn btn-reservation">
+                                            <a href="http://localhost/codeweek2016/index.php/Test"> <button type="submit" id="submit" name="submit" class="btn btn-reservation">
                                                 <span><i class="fa fa-check-circle-o"></i></span>
                                                 Направи поръчка
                                             </button></a>
                                         </div>
                                         <?php
-
+                                          echo "</div>";
+                                          echo '</div>';
                                          }
-                                          echo '<div>';
+                                      
                                           ?>
 
                         </div>
@@ -504,7 +517,10 @@ include_once('includes/header.php');
                     </div>
                 </div>
             </div>
+            
         </section>
+          </div>
+   
 
 
 

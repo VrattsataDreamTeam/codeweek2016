@@ -663,6 +663,8 @@ nav.shrink .navbar-toggle {
 
 footer
 {
+	clear: both;
+	overflow: hidden;
 	background-color: #8BC34A;
 	color: #ffffff;
 	padding: 30px 0px;
@@ -918,6 +920,7 @@ background-position: 100% 20%;
 	#filter-list li {
 		font-size: 14px;
 	}
+
 
 	#menu-pricing .item {
 		width: 40%;
