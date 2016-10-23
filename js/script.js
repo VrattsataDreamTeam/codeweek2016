@@ -108,34 +108,34 @@ $(document).ready(function () {
 });
 
 
-/*=================================================
-        Showing Icon in placeholder
-=====================================================*/
+// /*=================================================
+//         Showing Icon in placeholder
+// =====================================================*/
 
-$('.iconified').on('keyup', function() {
-    var input = $(this);
-    if(input.val().length === 0) {
-        input.addClass('empty');
-    } else {
-        input.removeClass('empty');
-    }
-});
+// $('.iconified').on('keyup', function() {
+//     var input = $(this);
+//     if(input.val().length === 0) {
+//         input.addClass('empty');
+//     } else {
+//         input.removeClass('empty');
+//     }
+// });
 
-/*=========================================================
-                Scroll  Speed
-=======================================================*/
+// /*=========================================================
+//                 Scroll  Speed
+// =======================================================*/
 
-$(function() {  
-    jQuery.scrollSpeed(100, 1000);
-});
+// $(function() {  
+//     jQuery.scrollSpeed(100, 1000);
+// });
 
 
-$(function() {  
-    jQuery('#menu-pricing a').on('click', function(ev){
+// $(function() {  
+//     jQuery('#menu-pricing a').on('click', function(ev){
      
-     var selected_id = jQuery(this).data('id');
+//      var selected_id = jQuery(this).data('id');
    
-     $("#dropdown").val(selected_id);
+//      $("#dropdown").val(selected_id);
 
-    }) 
-});
+//     }) 
+// });
