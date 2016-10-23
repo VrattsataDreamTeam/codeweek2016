@@ -534,7 +534,8 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 .reserve .section-bg
 {
-	background-image: url('../images/RaT-bg.jpg');
+	background-image: url('../images/order-img2.png');
+	background-size: 70%;
 }
 
 .reservation .section-content
