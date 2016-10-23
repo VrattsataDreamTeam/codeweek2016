@@ -39,7 +39,7 @@ CREATE TABLE `meals` (
 --
 
 INSERT INTO `meals` (`meal_id`, `meal_name`, `meal_description`, `meal_price`, `date_deleted`) VALUES
-(1, 'вита баница със сирене', 'пшенично брашно, сол, растително масло сирене', 15, NULL),
+(1, 'вита баница', 'пшенично брашно, сол, растително масло сирене', 15, NULL),
 (2, 'погача', 'пшенично брашно тип 500, сол, мая, яйца, мляко, растително масло, захар, сусам, мак', 10, NULL),
 (3, 'боб яхния в гювеч ', '500 гр зрял боб\r\n5-6 гл. малък лук (или 1 голяма)\r\n1 глава чесън\r\n1 морков\r\n1 червена пиперка\r\n1 домат\r\n2-3 клонки пресен или сух джоджен\r\n5-6 с. л. олио\r\n1 с. л. червен пипер\r\n1 ч. л. брашно\r\nщипка сух джоджен\r\nщипка мащерка (по желание)\r\nщипка черен пипер (по желание)\r\nсол на вкус\r\n1 с. л. сода бикарбонат\r\n', 11, NULL),
 (4, 'свинско месо на жар, 300 гр', 'свинско месо, сол', 9, NULL);
@@ -53,12 +53,43 @@ INSERT INTO `meals` (`meal_id`, `meal_name`, `meal_description`, `meal_price`, `
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
   `order_name` varchar(300) NOT NULL,
-  `oreder_phone` int(15) NOT NULL,
+  `order_phone` int(15) NOT NULL,
   `meal_id` int(11) NOT NULL,
   `order_num` int(10) NOT NULL,
-  `order_sum` int(10) NOT NULL,
+  `order_sum` int(10) DEFAULT NULL,
   `date_deleted` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Схема на данните от таблица `orders`
+--
+
+INSERT INTO `orders` (`order_id`, `order_name`, `order_phone`, `meal_id`, `order_num`, `order_sum`, `date_deleted`) VALUES
+(71, 'Ivan', 87587663, 2, 3, NULL, NULL),
+(72, 'Ivan', 2147483647, 2, 3, NULL, NULL),
+(73, 'Ivan', 2147483647, 2, 3, NULL, NULL),
+(74, 'Ivan', 2147483647, 2, 3, NULL, NULL),
+(75, 'Ivan', 2147483647, 2, 3, NULL, NULL),
+(76, 'Ivan', 2147483647, 2, 3, NULL, NULL),
+(77, 'Иван', 2147483647, 2, 2, NULL, NULL),
+(78, 'Иван', 2147483647, 2, 2, NULL, NULL),
+(79, 'Иван', 2147483647, 2, 2, NULL, NULL),
+(80, 'Иван', 887656676, 2, 2, NULL, NULL),
+(81, 'Ivan', 9989, 1, 11, NULL, NULL),
+(82, 'Mitko', 976885768, 2, 3, NULL, NULL),
+(83, 'ff', 9965634, 1, 3, NULL, NULL),
+(84, 'ff', 9965634, 1, 3, NULL, NULL),
+(85, 'ff', 9965634, 1, 3, NULL, NULL),
+(86, 'ff', 9965634, 1, 3, NULL, NULL),
+(87, 'ff', 9965634, 1, 3, NULL, NULL),
+(88, 'Petar', 9965634, 1, 3, NULL, NULL),
+(89, 'Petar', 9965634, 1, 3, NULL, NULL),
+(90, 'Petar', 9965634, 1, 3, NULL, NULL),
+(91, 'Petar', 9965634, 1, 3, NULL, NULL),
+(92, 'Petar', 9965634, 1, 3, NULL, NULL),
+(93, 'Petar', 9965634, 1, 3, NULL, NULL),
+(94, 'Petar', 9965634, 1, 3, NULL, NULL),
+(95, 'Petar', 9965634, 1, 3, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -90,7 +121,7 @@ ALTER TABLE `meals`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 --
 -- Ограничения за дъмпнати таблици
 --
