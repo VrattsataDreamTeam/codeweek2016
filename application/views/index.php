@@ -368,7 +368,7 @@ include_once('includes/header.php');
         </section> <!-- /#reserve -->
 
 
-
+<div id="the_form">
         <section class="reservation">
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="<?php echo base_url();?>images/icons/reserve_color.png">
             <div class="wrapper">
@@ -435,6 +435,7 @@ include_once('includes/header.php');
 
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
