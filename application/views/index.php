@@ -123,8 +123,8 @@ include_once('includes/header.php');
                                         <ul id="filter-list" class="clearfix">
                                             <li class="filter" data-filter="all">Всички</li>
                                             <li class="filter" data-filter=".dough">Тестени</li>
-                                            <li class="filter" data-filter=".meat">Местни</li>
-                                            <li class="filter" data-filter=".no-meat">Традиционни</li>
+                                            <li class="filter" data-filter=".meat">Месни</li>
+                                            <li class="filter" data-filter=".no-meat">Безмесни</li>
                                             <li class="filter" data-filter=".desert">Десерти</li>
                                         </ul><!-- @end #filter-list -->
                                     </div>
